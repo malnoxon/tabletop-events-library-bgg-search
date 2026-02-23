@@ -1,17 +1,11 @@
 # Gen Con Games Library BGG Wishlist Matcher
 
-Find games that are both in your BoardGameGeek collection AND available in the [Gen Con Games Library](https://tabletop.events/libraries/gen-con-games-library-the).
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
+Find games that are both in your BoardGameGeek wishlist/marked as want-to-play and part of the a specific tabletop.events games library https://tabletop.events/libraries/gen-con-games-library-the
 
 ## Exporting Your BGG Collection
 
 1. Go to your BGG collection: `https://boardgamegeek.com/collection/user/YOUR_USERNAME`
-2. Click the download icon (arrow pointing down) to export as CSV
+2. Download all as CSV
 3. Save the file as `bgg_games.csv` in this directory
 
 ## Usage
@@ -35,10 +29,3 @@ python find_library_wishlist_games.py --show-checked-out
 # Save to file
 python find_library_wishlist_games.py -o matches.txt
 ```
-
-## How It Works
-
-1. Loads your BGG CSV export and filters to wishlist/want-to-play games
-2. Fetches all games from the Gen Con Games Library API (~2,000+ games)
-3. Matches games by BGG ID
-4. Outputs matching games sorted alphabetically, with catalog numbers
