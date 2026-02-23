@@ -1,0 +1,9 @@
+# Personal data
+bgg_games.csv
+matches.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
